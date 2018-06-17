@@ -147,7 +147,7 @@ You can then use JavaScript object notation to access the different objects and 
 
 ## Contact
 
-If you are having issues making a call, or receiving JSON data from the MLB HOF API I can be contacted by email at me@mattmawhinney.com.
+The easiest way to bring up a concern would be to raise an issue with the API in this repo, if you need something else feel free to email me. If you are having issues making a call, or receiving JSON data from the MLB HOF API I can be contacted by email at me@mattmawhinney.com.
 
 Any other questions, or suggesions about the API can also be directed to the email above. I'd love to hear any feedback or if you are using the data from this application I'd like to see the applications you are using it in!
 
