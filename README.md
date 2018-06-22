@@ -30,7 +30,7 @@ The key is appended as a parameter to the service's url, then a call can simply 
 
 As mentioned above, a call to the MLB HOF is as simple as making an AJAX request to the URL listed below:
 
-> http://mattmawhinney.com/mlbHOF?key=JfKerLsuQ8IfET87Cg
+> http://mattmawhinney.com/mlbHOF/?key=JfKerLsuQ8IfET87Cg
 
 Below is an example of a simple AJAX request to the API:
 
@@ -39,7 +39,7 @@ Below is an example of a simple AJAX request to the API:
 //convert the JSON string to a object that can be looped over
 var hof;
 $.ajax({
-    url: "http://mattmawhinney.com/mlbHOF?key=JfKerLsuQ8IfET87Cg",
+    url: "http://mattmawhinney.com/mlbHOF/?key=JfKerLsuQ8IfET87Cg",
     success: function(results){
         hof = JSON.parse(results);
         console.log(hof);
@@ -56,7 +56,7 @@ The webservice allows the user to filter the results that are returned by three 
 //url is appended with team, position, andyear to filter what is returned before your application 
 //accesses it.
 $.ajax({
-    url: "http://mattmawhinney.com/mlbHOF.php?key=JfKerLsuQ8IfET87Cgteam=Detroit Tigers&position=CF",
+    url: "http://mattmawhinney.com/mlbHOF/?key=JfKerLsuQ8IfET87Cgteam=Detroit Tigers&position=CF",
     success: function(results){
         var hof = JSON.parse(results);
         console.log(hof);
@@ -133,7 +133,7 @@ You can then use JavaScript object notation to access the different objects and 
     <script type="text/javascript">
         var div = document.getElementById('json');
         $.ajax({
-            url: "http://mattmawhinney.com/mlbHOF?key=JfKerLsuQ8IfET87Cg",
+            url: "http://mattmawhinney.com/mlbHOF/?key=JfKerLsuQ8IfET87Cg",
             success: function(results){
                 var hof = JSON.parse(results);
                 console.log(hof);
